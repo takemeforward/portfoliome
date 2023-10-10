@@ -1,7 +1,8 @@
 :root{
 	--color-primary: #33333a;
-	--color-secondry: #E9F8F9;
+	--color-secondry: #e2fdff;
 	--color-ternary: #537FE7;
+	--color-model: #e0f6f8;
 }
 ::selection{
 	color: white;
@@ -64,7 +65,7 @@ body{
 .about-container {
 	width: 55%;
 	padding: 8% 4%;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	text-align: center;
   }
 
@@ -192,15 +193,17 @@ body{
 	max-width: 150px;
 	background-color: white;
 	padding: 2%;
-	border-radius: 12px;
+	border-radius: 4px;
 	box-sizing: border-box;
-    transition: transform 0.3s;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+	transition: transform 0.3s;
 }
 .skill:hover{
     transform: scale(1.2) !important;
 }
 .skill-image{
 	max-width: 80%;
+	border-radius: inherit;
 }
 .project-container{
 	padding: 50px;
@@ -208,19 +211,23 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 1em;
 }
 .project{
-	border-radius: 20px;
+	border-radius: 8px;
 	text-align: center;
 	background-color: white;
 	padding: 40px 20px;
-	max-width: 300px;
+	max-width: 275px;
 	min-height: 300px;
-	max-height: 450px;
+	max-height: 425px;
+	filter: brightness(.99);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
 }
 .project:hover{
-    transform: scale(1.1);
+    filter: brightness(1);
+	/* transform: scale(1.1) !important; */
+
 }
 .project p{
 	margin-top: 4px;
@@ -228,18 +235,23 @@ body{
 }
 .project .project-btn{
 	border-style: none;
-	background-color: var(--color-ternary);
-	color: white;
+	background-color: white;
+	border: 1px solid var(--color-ternary);
+	color: var(--color-ternary);
+	/* background-color: var(--color-ternary); */
+	/* color: white; */
 	font-weight: 500;
 	border-radius: 8px;
 	cursor: pointer;
 	padding: 4px 16px;
+	transition: background-color 0.3s;
 }
 .project-btn:hover{
-	background: #4166bd;
+	background: var(--color-ternary);
+	color: white;
 }
 .project-img{
-	border-radius: 10px;
+	border-radius: inherit;
 	max-width: 100%;
 	zoom: 80%;
 }
@@ -247,11 +259,6 @@ span{
 	display: block;
 	padding-left: 5%;
 	text-align: left;
-}
-.project-image{
-	width: 90%;
-	margin-bottom: 5%;
-	border-radius: 10px;
 }
 footer{
 	padding: 2em;
@@ -264,9 +271,12 @@ footer{
 	zoom: 150%;
 	padding: 1rem 1rem;
 	color: white;
+	filter: brightness(.7);
 }
 .social:hover{
 	cursor: pointer;
+	filter: brightness(1);
+	
 }
 
 @media (max-width: 600px)
@@ -288,17 +298,19 @@ footer{
 		text-align: center !important;
 	}
 	.profile-image{
-		display: none;
+		width: 60%;
+		/* display: none; */
 	}
 	.about-container,.home-container{
 		display: block;
 	}
 	.skill-container{
 		display: block;
+		max-width: 100%;
 	}
 	.skill{
 		display: inline-block;
-		width: 20%;
+		width: 30%;
 		margin: 1em;
 	}
 	.about-container{
@@ -307,10 +319,8 @@ footer{
 		text-align: center;
 	}
 	.project{
-		width: 100%;
-	}
-	.button{
-		padding: 4px 12px;
+		width: 300px;
+		max-width: 100%;
 	}
 
 }
@@ -359,3 +369,26 @@ image{
 body{
     max-width: 100% !important;
 }
+
+
+
+
+/* /////// */
+
+.button {
+	padding: 8px 24px;
+	border-radius: 4px;
+	border: 1px solid var(--color-ternary);
+	color: var(--color-ternary);
+	cursor: pointer;
+	font-size: 1.1rem;
+	background-color: inherit;
+	font-family: "Arial";
+	transition: background-color 0.3s;
+  }
+  .button:hover{
+	background-color: var(--color-ternary);
+	color: white;
+  }
+  
+

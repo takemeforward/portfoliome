@@ -4,14 +4,16 @@
         <div class="content">
             <h1>Hii, my name is Vishal</h1>
             <p data-aos="fade-left">I am a passionate and dedicated web developer with expertise in HTML, CSS, JavaScript, and Node.js. I am actively seeking an internship opportunity to enhance my skills and contribute to real-world projects. With a deep understanding of front-end and back-end technologies, I am well-equipped to tackle the challenges of modern web development.</p>
+            <button class="button"><a href="https://drive.google.com/uc?export=download&id=1b4k_6KYvC1aN2q2elMeThpzm8Z4lY3TY" download><i class="fa-solid fa-cloud-arrow-down fa-beat"></i> Download Resume</a></button>
         </div>
-        </div>
+    </div>
+
     <img src="images/profile-image.png" class="profile-image" data-aos="fade-up" data-aos-offset="200">
     
  </div>
 </section>
 <section id="education" data-aos="fade-up" data-aos-offset="200">
-    <h1 class="heading-primary">Education:</h1>
+    <h1 class="heading-primary">Education <i class="fa-sharp fa-solid fa-school"></i></h1>
     <div class="education-container">
         <div class="education"  data-aos="fade-up" data-aos-offset="200">
                 <h3 class="degree">Intermediate<i class="fa-solid fa-building-columns"></i></h3>
@@ -28,7 +30,7 @@
         <div class="education" data-aos="fade-up" data-aos-offset="200">
             <h3 class="degree">MCA<i class="fa-solid fa-graduation-cap"></i></h3>	
         <div class="education-description">
-                I'm currently 2nd Semester Student at National Institute Of Technology Agartala, enrolled in 3year MCA course focusing on software engineering.
+                I'm a pre-final year student at National Institute Of Technology Agartala, enrolled in 3year MCA(2022-25) focusing on software engineering.
             </div>
         </div>
 
@@ -74,6 +76,14 @@
     </h1>
 
     <div class="project-container"  data-aos="fade-up" data-aos-offset="200">
+        <div class="project project1" data-aos="fade-down-left" >
+            <img src="images/scriblio.jpg" alt="" class="project-img">
+            <div class="project-text">
+                <p>Fully responsive frontend design for writing, publishing blogs. And a compatable backend which let user create their account and read/write blogs of their choice.</p>
+            </div>
+            <button class="project-btn"><a href="https://scriblio.onrender.com/" target="_blank">View project...</a></button>
+
+        </div>
         <div class="project project1" data-aos="fade-down-left" >
             <img src="images/blogr-img.png" alt="" class="project-img">
             <div class="project-text">
@@ -124,16 +134,24 @@
         <div class="project project6" data-aos="fade-up">
             <img src="images/login.png" alt="" class="project-img">
             <div class="project-text">
-                <p>Beautiful preview card design for perfume.</p>
+                <p>Beautiful Login/Signup page with robust design</p>
             </div>
             <button class="project-btn"><a href="https://takemeforward.github.io/login/" target="_blank">View project...</a></button>
+
+        </div>
+        <div class="project project6" data-aos="fade-up">
+            <img src="images/todolist.jpg" alt="" class="project-img">
+            <div class="project-text">
+                <p>Todolist make your list.</p>
+            </div>
+            <button class="project-btn"><a href="https://todolist-v2-l6ix.onrender.com/" target="_blank">View project...</a></button>
 
         </div>
 
 
     </div>
 </section>
-<div class="heading-primary" data-aos="fade-up">Contact us <i class="fa-regular fa-envelope"></i></div>
+<div class="heading-primary" data-aos="fade-up">Send me your message <i class="fa-regular fa-envelope"></i></div>
 <div class="form-container">
     <form action="/" method="post" class="form"><i class="fa-dark fa-paper-plane-top"></i>
     <input type="text" name="name" class="form-control" placeholder="Name">
@@ -145,6 +163,5 @@
     
     </form>
 </div>
-
 
 <%- include("partials/footer") -%> 
