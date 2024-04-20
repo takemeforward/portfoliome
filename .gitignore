@@ -1,0 +1,24 @@
+# Node.js dependencies #
+/node_modules
+
+# Compiled CSS files #
+/css/style.css
+
+# Environment variables #
+.env
+
+# IDE and editor files #
+.idea/
+.vscode/
+
+# Compiled binaries or libraries #
+*.dll
+*.dylib
+*.exe
+
+# Compiled JavaScript files #
+*.js
+*.js.map
+
+# Miscellaneous #
+*.log
